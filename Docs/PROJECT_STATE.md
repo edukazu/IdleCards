@@ -7,44 +7,76 @@
 - Versão exata: 6000.5.1f1
 - Linguagem: C#
 - Plataforma inicial: Android
-- Editor: Visual Studio Code
+- Editor de código: Visual Studio Code
+- Repositório: GitHub — edukazu/IdleCards
+- Branch principal: main
 - Diretor e revisor: Eduardo
 - Programador principal: GPT-5.5 Thinking
 
-## Fase atual
+## Estado técnico
 
-Fundação e configuração inicial.
+- Unity instalada e funcionando.
+- Android Build Support instalado.
+- Android SDK & NDK Tools instalados.
+- OpenJDK instalado.
+- Web Build Support instalado.
+- Projeto Universal 2D criado.
+- Repositório Git local criado.
+- Repositório remoto conectado ao GitHub.
+- Primeiro push concluído.
+- Ainda não há gameplay implementado.
 
-O projeto Unity foi criado e o Editor abriu corretamente. Os módulos Android Build Support, Android SDK & NDK Tools, OpenJDK e Web Build Support estão instalados.
+## Direção aprovada do produto
 
-Ainda não há código de gameplay.
+- Jogo mobile idle de cartas.
+- Orientação vertical.
+- Referência de qualidade e apresentação: Epic Seven.
+- Estética: fantasia anime.
+- O universo não ficará limitado à fantasia medieval.
+- A estrutura narrativa permitirá múltiplos universos e diferentes temáticas.
 
-## Decisões aprovadas
+## Tela inicial de batalha
 
-1. Desenvolver diretamente em Unity.
-2. Não criar uma segunda implementação do jogo em HTML, CSS e JavaScript.
-3. Usar build Web da Unity para revisões rápidas.
-4. Desenvolver por pequenas entregas verticais.
-5. Separar lógica, dados e interface.
-6. Usar orientação vertical.
-7. Exibir inimigos de PvE na parte superior.
-8. Exibir quatro cartas do jogador na parte inferior.
-9. Organizar as cartas em cruz: norte, sul, leste e oeste.
-10. Permitir qualquer carta em qualquer slot.
-11. Deixar buffs, debuffs e prioridade de alvo por posição para uma fase futura.
+- Inimigos de PvE ficam na parte superior.
+- Quatro cartas do jogador ficam na parte inferior.
+- A formação do jogador será em cruz:
+  - Norte.
+  - Sul.
+  - Leste.
+  - Oeste.
+- Qualquer carta poderá ocupar qualquer slot.
+- Buffs, debuffs e prioridade de alvo por posição serão sistemas futuros.
+- Exemplo futuro: a linha de frente poderá ter maior chance de receber ataques.
 
-## Direção inicial da batalha
+## Protagonista
 
-```text
-┌─────────────────────────┐
-│      INIMIGOS / PvE     │
-├─────────────────────────┤
-│          [N]            │
-│     [O]       [L]       │
-│          [S]            │
-└─────────────────────────┘
-```
+- O jogador assume o papel do protagonista.
+- O protagonista é um Viajante Dimensional.
+- Ele será a primeira carta recebida pelo jogador.
+- O foco narrativo será leve, adequado a um jogo idle.
 
-## Próxima tarefa
+## Premissa narrativa
 
-Integrar esta documentação à raiz do projeto Unity e confirmar que a pasta correta está aberta no Visual Studio Code.
+Uma fenda dimensional surge por um motivo desconhecido e começa a arrastar a irmã do protagonista.
+
+Ao tentar segurá-la, ele entra em contato direto com a energia da fenda. Apenas a irmã é levada.
+
+Depois do incidente, o protagonista percebe que foi alterado e agora consegue perceber e interagir com fendas dimensionais.
+
+Sua motivação inicial é encontrar a irmã desaparecida.
+
+Durante a jornada, ele descobrirá uma ameaça ou propósito maior ligado às rupturas entre universos.
+
+## Próxima tarefa prática
+
+Configurar o projeto para orientação vertical e iniciar a primeira cena de protótipo da batalha.
+
+Ainda não implementar:
+
+- Sistema completo de batalha.
+- Buffs e debuffs de posição.
+- Save.
+- Idle offline.
+- Monetização.
+- Servidor.
+- Arte final.
