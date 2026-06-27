@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 2301153439396500618}
   - component: {fileID: 4590943141839614614}
   - component: {fileID: 6116253155886679045}
+  - component: {fileID: 6879441981801146121}
   m_Layer: 5
   m_Name: CardView
   m_TagString: Untagged
@@ -213,3 +214,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6879441981801146121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2548342669551197832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9d1050dc769684286a532a3a4fc043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IdleCards.Presentation.Cards.CardView
+  characterName: {fileID: 2278088242882501415}

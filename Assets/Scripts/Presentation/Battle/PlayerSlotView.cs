@@ -1,42 +1,48 @@
-using TMPro;
+using System;
+using IdleCards.Domain.Cards;
+using IdleCards.Presentation.Cards;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace IdleCards.Presentation.Battle
 {
-    public sealed class PlayerSlotView : MonoBehaviour
+    public sealed class PlayerSlotView : MonoBehaviour, IPointerClickHandler
     {
-        [SerializeField] private GameObject cardView;
-        [SerializeField] private TMP_Text characterName;
+        [SerializeField] private GameObject cardViewObject;
+        [SerializeField] private CardView cardView;
 
-        public bool IsOccupied => cardView != null && cardView.activeSelf;
+        public event Action<PlayerSlotView> Clicked;
 
-        public void ShowCard(string displayName)
+        public bool IsOccupied => cardViewObject != null && cardViewObject.activeSelf;
+
+        public void ShowCard(CardDefinition card)
         {
-            if (cardView == null)
+            if (cardViewObject == null || cardView == null)
             {
-                Debug.LogError($"{name}: CardView reference is missing.", this);
+                Debug.LogError($"{name}: CardView references are missing.", this);
                 return;
             }
 
-            cardView.SetActive(true);
-
-            if (characterName != null)
-            {
-                characterName.text = displayName;
-            }
+            cardViewObject.SetActive(true);
+            cardView.Bind(card);
         }
 
         public void Clear()
         {
             if (cardView != null)
             {
-                cardView.SetActive(false);
+                cardView.Clear();
             }
 
-            if (characterName != null)
+            if (cardViewObject != null)
             {
-                characterName.text = string.Empty;
+                cardViewObject.SetActive(false);
             }
+        }
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            Clicked?.Invoke(this);
         }
     }
 }

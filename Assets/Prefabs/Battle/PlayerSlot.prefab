@@ -89,8 +89,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc3f8f5b57f3624aa798e99e3659824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::IdleCards.Presentation.Battle.PlayerSlotView
-  cardView: {fileID: 2468728529572390309}
-  characterName: {fileID: 2198392700273188874}
+  cardViewObject: {fileID: 2468728529572390309}
+  cardView: {fileID: 6802572493177723940}
 --- !u!1001 &80826940362668845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -192,17 +192,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f81baf8b40840da46af00287a2aa73eb, type: 3}
---- !u!114 &2198392700273188874 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2278088242882501415, guid: f81baf8b40840da46af00287a2aa73eb, type: 3}
-  m_PrefabInstance: {fileID: 80826940362668845}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!224 &2229406545634701223 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2301153439396500618, guid: f81baf8b40840da46af00287a2aa73eb, type: 3}
@@ -213,3 +202,14 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2548342669551197832, guid: f81baf8b40840da46af00287a2aa73eb, type: 3}
   m_PrefabInstance: {fileID: 80826940362668845}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6802572493177723940 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6879441981801146121, guid: f81baf8b40840da46af00287a2aa73eb, type: 3}
+  m_PrefabInstance: {fileID: 80826940362668845}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2468728529572390309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9d1050dc769684286a532a3a4fc043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IdleCards.Presentation.Cards.CardView
